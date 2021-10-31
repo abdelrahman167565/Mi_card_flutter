@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
               //mainAxisAlignment: MainAxisAlignment.spaceEvenlyBetween,
               //crossAxisAlignment: CrossAxisAlignment.end,
               //crossAxisAlignment: CrossAxisAlignment,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 CircleAvatar(
                   radius: 70.0,
@@ -43,7 +44,51 @@ class MyApp extends StatelessWidget {
                       letterSpacing: 2.5,
                       fontWeight: FontWeight.bold,
                     )),
-
+                SizedBox(
+                  height:20,
+                  width:150,
+                  child:Divider(
+                    color:Colors.teal.shade100,
+                  ),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.phone,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      '+20 1272198897',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'source sans proReg',
+                      ),
+                    ),
+                  ),
+                ),
+                Card(
+                  color: Colors.white,
+                  margin:
+                      EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'Abdelrahman.amer1999@gmail.com',
+                      style: TextStyle(
+                        fontSize: 17.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'source sans proReg',
+                      ),
+                    ),
+                  ),
+                ),
               ]),
         ),
       ),
